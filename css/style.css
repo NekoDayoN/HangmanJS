@@ -1,0 +1,42 @@
+.container {
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+#tip {
+    letter-spacing: 5px;
+    display: none;
+}
+
+.showTip {
+    display: block !important;
+}
+
+#letterList {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.letter {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.letter:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#restart {
+    display: none;
+    margin-top: 15px;
+}
+
+.showRestart {
+    display: block !important;
+}
