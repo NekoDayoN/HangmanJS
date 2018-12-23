@@ -20,7 +20,7 @@ const Hangman = (function() {
     }
 
     function guessWord(word) {
-        if(core.secret.guessWord(word)) {
+        if(core.secret.guessWord(word.trim())) {
             core.blankWord = word;
             core.didGuess = true;
         }
@@ -34,7 +34,7 @@ const Hangman = (function() {
     }
 
     function guessLetter(letter) {
-        const matches = core.secret.guessLetter(letter);
+        const matches = core.secret.guessLetter(letter.trim());
         let newWord = "",
             found = false;
 
